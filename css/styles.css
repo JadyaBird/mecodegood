@@ -1,0 +1,47 @@
+/*Dark Purple: #6b3ba1;
+light purple: #b69dd3;
+light blue: #c5d8ff ;
+blue purple: ##C1C4FE;
+
+ */
+
+.jumbotron{
+	text-align: center;
+	background-color: #c5d8ff;
+	
+	/* F3F3F7;*/
+}
+.navbar{
+	background-color: #C1C4FE;
+}
+.img-responsive{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 25px;
+
+}
+
+.btn.btn-large.btn-success{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: auto;
+}
+
+.img-responsive.loveMus{
+	float:left;
+	padding-left: 10px;
+	padding-top: 25px;
+}
+
+.rockwell{
+	font-family: Rockwell Extra Bold;
+	font-size: 20px;
+	color: black;
+}
+.modal-footer{
+	background-color: #C1C4FE
+}
