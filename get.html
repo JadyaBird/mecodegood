@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial: Hello Dojo!</title>
+</head>
+<body>
+    <h1 id="greeting">Hello</h1>
+    <!-- load Dojo -->
+    <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.9.3/dojo/dojo.js"
+            data-dojo-config="async: true"></script>
+ 
+    
+    <div id = "resultDiv"> </div>
+
+    <!-- AJAX Request-->
+    <script>
+     require(
+        ["dojo/dom", 
+        "dojo/request", 
+        "dojo/json",
+        "dojo/domReady!"],
+
+    function(dom, request, JSON){
+        // Results will be displayed in resultDiv
+        var resultDiv = dom.byId("resultDiv");
+ 
+        // Request the JSON data from the server
+        request.get("http://jsonstub.com/coops/claims", {
+            // Parse data from JSON to a JavaScript object
+            headers: {
+                'JsonStub-User-Key': '90e58597-6cfd-4a66-a942-f23fea125f24',
+                'JsonStub-Project-Key': 'dfc7b940-be56-451f-8cf9-79acb462520c'
+                    }
+
+            
+        }).then(function(data){
+            // Display the data sent from the server
+            console.log(data);
+           var json = JSON.parse(data);
+           console.log(json  );
+           resultDiv.innerHTML = "ClaimsNumber: "+json.GetClaimsResult[0].ClaimNumber;
+        },
+        function(error){
+            // Display the error returned
+            resultDiv.innerHTML = error;
+        });
+    }
+);
+    </script>
+</body>
+</html>

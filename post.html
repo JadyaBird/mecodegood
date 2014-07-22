@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+
+	<head>
+		<meta charset = "utf-8">
+		<title>Post Demo</title>
+
+
+	</head>
+
+	<body data-pinterest-extention-installed = "cr1.3.2">
+
+		<h1>Authentication Post</h1>
+		
+
+		<div id = "resultDiv">
+
+			<div>
+				<label>Server Message:</label>
+				<span id="svrMessage"></span>
+			</div>
+
+		</div>
+
+		<form id = "formNode">
+
+			<div>
+				<label>Username: </label>
+				<input type="text" name="username">
+			</div>
+
+			<div>
+				<label>Password: </label>
+				<input type="password" name="password">
+			</div>	
+
+			<button type = "submit">Login</button>
+		</form>
+
+		<!-- load dojo -->
+		 <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.9.3/dojo/dojo.js"
+            data-dojo-config="async: true"></script>
+
+        <!--Require -->
+        <script type="text/javascript">
+
+			require(["dojo/dom", "dojo/on", "dojo/request", "dojo/dom-form"],
+				function(dom, on, request, domForm){
+
+					var form = dom.byId('formNode');
+
+					// Attach the onsubmit event handler of the form
+					on(form, "submit", function(evt){
+
+						// prevent the page from navigating after submit
+						evt.stopPropagation();
+						evt.preventDefault();
+
+						// Post the data to the server
+						request.post("http://jsonstub.com/coops/auth", {
+							// Send the username and password						
+							data: domForm.toObject("formNode"),
+							
+							//send jsonstub authentication
+							headers: {
+			                'JsonStub-User-Key': '90e58597-6cfd-4a66-a942-f23fea125f24',
+			                'JsonStub-Project-Key': 'dfc7b940-be56-451f-8cf9-79acb462520c'
+			                    }
+
+
+						}).then(function(response){
+							
+							//parse response
+							var json = JSON.parse(response);
+							//display response in server message
+							dom.byId('svrMessage').innerHTML = json.PostAuthorization.statusResponse;
+
+							
+						},
+						function(error){
+							//display error to screen
+							dom.byId('svrMessage').innerHTML = error;
+						}
+						);
+					});
+				}
+			);
+		
+
+
+        </script>
+	</body>
+
+
+
+</html>
