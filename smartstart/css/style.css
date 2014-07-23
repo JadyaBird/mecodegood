@@ -589,7 +589,9 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 		/* Responsive Nav */
 
 		#main-nav .responsive-nav {
+			/*
 			background-image: url(../img/responsive-nav-bg.png);
+			*/
 			background-position: center right;
 			background-repeat: no-repeat;
 			display: none;
@@ -1153,9 +1155,9 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 						font-size: 0;
 						text-indent: 0;
 					}
-
+					/*
 					.extended-pricing-table .free .features li .check { background-image: url(../img/icon-check-3-green.png); }
-
+	*/
 				.extended-pricing-table .footer { background: #f8f8f8; }
 
 				.extended-pricing-table .featured .footer { padding-bottom: 26px; }
@@ -1176,7 +1178,9 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 	/* -------------------------------------------------- */
 
 	#back-to-top, .touch-device #back-to-top:hover {
+		/*
 		background: url(../img/arrow-up-large.png) no-repeat center center;
+		*/
 		background-color: rgb(221, 221, 221);
 		background-color: rgba(221, 221, 221, .7);
 		bottom: 20px;
@@ -2531,13 +2535,14 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 		}
 
 		.contact-info li:first-child { margin-left: 0; }
+		/*
 
 		.contact-info .address { background: url(../img/icon-address.png) no-repeat 0 0; }
 
 		.contact-info .phone { background: url(../img/icon-phone.png) no-repeat 0 1px; }
 
 		.contact-info .email { background: url(../img/icon-email-2.png) no-repeat 0 4px; }
-
+*/
 	/* -------------------------------------------------- */
 	/*	Social Links
 	/* -------------------------------------------------- */
@@ -2575,7 +2580,7 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 						transition: all 0.2s ease-out;
 				width: 20px;
 			}
-
+/*
 			.social-links li.behance a { background-image: url(../img/icon-behance.png); }
 
 			.social-links li.delicious a { background-image: url(../img/icon-delicious.png);
@@ -2600,9 +2605,9 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 			}
 
 			.social-links li.email a { background-image: url(../img/icon-email.png); }
-
-			.social-links li.facebook a { background-image: url(../img/icon-facebook.png); }
-
+*/
+			.social-links li.facebook a { background-image: url(../images/icon-facebook.png); }
+/*
 			.social-links li.flickr a { background-image: url(../img/icon-flickr.png); }
 
 			.social-links li.forrst a { background-image: url(../img/icon-forrst.png); }
@@ -2625,10 +2630,11 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 				background-position: 0 -15px;
 				height: 15px;
 			}
+*/
+			.social-links li.linkedin a { background-image: url(../images/icon-linkedin.png); 
+			}
 
-			.social-links li.linkedin a { background-image: url(../img/icon-linkedin.png); }
-
-			.social-links li.mobypicture a { background-image: url(../img/icon-mobypicture.png); }
+			/*.social-links li.mobypicture a { background-image: url(../img/icon-mobypicture.png); }
 
 			.social-links li.myspace a { background-image: url(../img/icon-myspace.png); }
 				
@@ -2651,25 +2657,26 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 				background-position: 0 -15px;
 				height: 15px;
 			}
-
+*/
 			.social-links li.twitter a {
-				background-image: url(../img/icon-twitter.png);
+				background-image: url(../images/icon-twitter.png);
 				background-position: 0 -15px;
 				height: 15px;
 				width: 21px;
 			}
-
+/*
 			.social-links li.vimeo a {
 				background-image: url(../img/icon-vimeo.png);
 				background-position: 0 -15px;
 				height: 15px;
 			}
-
+*/
 			.social-links li.youtube a {
-				background-image: url(../img/icon-youtube.png);
+				background-image: url(../images/icon-youtube.png);
 				background-position: 0 -15px;
 				height: 15px;
 			}
+
 
 			.social-links li a:hover { background-position: 0 0; }
 			

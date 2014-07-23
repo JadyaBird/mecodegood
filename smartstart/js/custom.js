@@ -951,10 +951,10 @@ jQuery(document).ready(function($) {
 		if( $map.length ) {
 
 			$map.gMap({
-				address: 'Level 13, 2 Elizabeth St, Melbourne Victoria 3000 Australia',
+				address: '111 Hollinger Crescent Kitchener, Ontario, Canada N2K 2Y8',
 				zoom: 16,
 				markers: [
-					{ 'address' : 'Level 13, 2 Elizabeth St, Melbourne Victoria 3000 Australia' }
+					{ 'address' : '111 Hollinger Crescent Kitchener, Ontario, Canada N2K 2Y8' }
 				]
 			});
 
