@@ -1807,6 +1807,7 @@ input.placeholder, textarea.placeholder { color: #b0b0b0; }
 /* ---------------------------------------------------------------------- */
 
 .team-member {
+	padding-left: 5%;
 	border-bottom: 1px solid #efefef;
 	color: #777;
 	margin-bottom: 50px;

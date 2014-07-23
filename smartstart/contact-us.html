@@ -12,6 +12,8 @@
 	
 	<meta name="description" content="">
 	<meta name="author" content="">
+	<!--mail style -->
+	<link rel="stylesheet" href="css/styles.css">
 	
 	<!--[if !lte IE 6]><!-->
 		<link rel="stylesheet" href="css/style.css" media="screen" />
@@ -59,10 +61,11 @@
 			<li>
 				<a href="about-us.html" data-description="All the different stuff">Info</a>
 				<ul>
+					<li><a href="tech-overview.html">Tech Overview</a></li>
 					<li><a href="about-us.html">About Us</a></li>
 					<li><a href="our-team.html">Our Team</a>
 						<ul>
-							<li><a href="we-are-hiring.html">We are hiring</a></li>
+							<li><a href="we-are-hiring.html">Work Opportunities</a></li>
 						</ul>
 					</li>
 					<!--
@@ -99,7 +102,7 @@
 			-->
 			</li>
 			<li>
-				<a href="solutions.html" data-description="Solutions Problems">Solutions</a>
+				<a href="solutions.html" data-description="Solving Problems">Solutions</a>
 			</li>
 			<li class="current">
 				<a href="contact-us.html" data-description="Enquire here">Contact</a>
@@ -147,34 +150,28 @@
 
 			<h3>Let's keep in touch</h3>
 
-			<form action="php/contact-send.php" method="post" class="contact-form">
+			<div id="form-messages"></div>
+
+			<form id = "ajax-contact" action="mailer.php" method="post" class="contact-form">
 			
-				<p class="input-block">
-					<label for="contact-name"><strong>Name</strong> (required)</label>
-					<input type="text" name="name" value="" id="contact-name" required>
-				</p>
+				<div class="field">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
 
-				<p class="input-block">
-					<label for="contact-email"><strong>Email</strong> (required)</label>
-					<input type="email" name="email" value="" id="contact-email" required>
-				</p>
-				
-				<p class="input-block">
-					<label for="contact-subject"><strong>Subject</strong></label>
-					<input type="text" name="subject" value="" id="contact-subject">
-				</p>
+			<div class="field">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
 
-				<p class="textarea-block">
-					<label for="contact-message"><strong>Your Message</strong> (required)</label>
-					<textarea name="message" id="contact-message" cols="88" rows="6" required></textarea>
-				</p>
-			
-				<div class="hidden">
-					<label for="contact-spam-check">Do not fill out this field:</label>
-					<input name="spam-check" type="text" value="" id="contact-spam-check" />
-				</div>
+			<div class="field">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+			</div>
 
-				<input type="submit" value="Submit">
+			<div class="field">
+				<button type="submit">Send</button>
+			</div>
 
 				<div class="clear"></div>
 
@@ -183,7 +180,8 @@
 		</div><!-- end .three-fourth.last -->
 
 	</div><!-- end .container -->
-		
+
+	
 </section><!-- end #content -->
 
 <footer id="footer" class="clearfix">
@@ -262,6 +260,9 @@
 	<script src="js/jquery.gmap.min.js"></script>
 	<script src="js/jquery.touchSwipe.min.js"></script>
 	<script src="js/custom.js"></script>
+	<!--Mail -->
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="app.js"></script>
 <!--<![endif]-->
 </body>
 </html>
