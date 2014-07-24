@@ -7,6 +7,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
 <meta name="description" content="Just another WordPress site">
 <link rel="author" href="">
+<!--mail style -->
+	<link rel="stylesheet" href="css/styles.css">
 
 <!-- Mobile Devices Viewport Resset-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,11 +62,11 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 		<nav class="site_nav" id="site_nav">
 			<ul class="">
 				<li class="active"><a href="#about_me">About me</a></li>
-				<li><a href="#my_expertise">My Expertise</a></li>
+				<li><a href="#my_expertise">Engineering Skills</a></li>
 				<li><a href="#experience">Experience</a></li>
+				<li><a href="#portfolio">Design Projects</a></li>
 				<li><a href="#education">Education</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#blog">My Blog</a></li>
+				<li><a href="#blog">Coding Website</a></li>
 				<li><a href="#contact">Contact me</a></li>			</ul>
 		</nav> <!-- /site_nav -->
 
@@ -76,9 +78,10 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 		
 		<!-- HEADER -->
 		<header class="site_header centerise borderbtn">
-			<div id="logoline"><h1>JENNA GODWIN</h1></div>
-			<h2>COMPUTER ENGINEERING</h2>
-			<h3></h3>
+			<div id="logoline"><h1>JENNA</h1></div>
+			<div id="logoline"><h1>GODWIN</h1></div>
+			<h2>Electronics and App Hobbist</h2>
+			<h3>Computer Engineering 2A </h3>
 		</header> <!-- /site_header -->
 		<!-- end HEADER -->
 		<div class="container-fluid page">
@@ -91,20 +94,27 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 				</aside>
 				<article class="span6 borderleft par_el">
 					<span class="circle">
-						<img src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/img/mypic.jpg" alt="MyPicture" width="84" height="84">
+						<img src="img/jenna.jpg" alt="MyPicture" width="84" height="84">
 					</span>
 					<div class="paragraphs">
-						<p>Hello, I'm Lorem ipsum dolor sit amet, conseur adipiscing elit puella magna est.</p><p>Etiam sem eros, interdum at rutrum et, hendrerit id nisi. Etiam iaculis lorem eget arcu gravida lacinia. Fringilla justo ullamcorper ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Raesent sem elit, volutpat id vulputate faucibus, fringilla vel massa. Proin nec mi a mi tincidunt elementum sed vel ipsum.</p>					</div>
+						<p>Hello, My name is Jenna Godwin, and I love to dream big, smile alot, get down to work, hack electronics and code. I am currently in my 2A term of Computer Engineering at the University of Waterloo, and I am loving it!</p>
+						<p> My experience is mainly regarding coding and software, however I am strongly interested in obtaining more real world experience with hardware and electronics. In the mean time I have been working with Raspberry Pi and Arduino SCB's.</p>
+						<p>In my spare time, I love to run outdoors with my husky puppy, read a good historical fiction, take apart electronics and see what makes them tick, I participate in cultrual dancing, like to learn languages, and eat exotic foods. </p>				
+					</div>
 				</article>
 				<div class="span3 cont_info">
 					<div class="soc">
 						<ul>
+							<!--
 							<li><a href="//www.facebook.com/envato"><img src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/img/icons/facebook.png" alt="facebook" width="24" height="24"></a></li>
 							<li><a href="//twitter.com/envato"><img src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/img/icons/twitter.png" alt="twitter" width="24" height="24"></a></li>
-							<li><a href="//www.linkedin.com/company/envato"><img src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/img/icons/linkedin.png" alt="linkedin" width="24" height="24"></a></li>
+						-->
+							<li><a href="http://www.linkedin.com/profile/view?id=92794464&authType=name&authToken=Zu7n&trk=prof-sb-browse_map-name"><img src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/img/icons/linkedin.png" alt="linkedin" width="24" height="24"></a></li>
+							<!--
 							<li><a href="//plus.google.com/+envato"><img src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/img/icons/google.png" alt="google" width="24" height="24"></a></li>
 							<li id="rss_link"><a href="http://pixeldizajn.com/perfectcvwp/feed/"><img src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/img/icons/rss.png" alt="rss" width="24" height="24"></a></li>
 							<li id="printicon" style="display: none;"><a href="#"><img src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/img/icons/printer.png" alt="print" width="24" height="24"></a></li>
+						-->
 
 						</ul>
 					</div>
@@ -112,12 +122,13 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 					<div class="info">
 						<ul>
 							<li class="first_con">
-								<span class="icon-mobile"></span><a href="tel:+387 51 000 111">+387 51 000 111</a>
+								<span class="icon-mobile"></span><a href="tel:+387 51 000 111">(519) 998 - 7939</a>
 							</li>
 							<li class="second_con">
-								<span class="icon-location"></span><a>Brace Jugovica 21</a>
+								<span class="icon-location"></span><a>University of Waterloo</a>
 							</li>
-							<li class="third_con"><span class="icon-mail"></span><a href="mailto:mail@mail.com" id="emailfont">mail@mail.com</a>
+							<!-- (alternative to open mail ) mailto:mail@mail.com -->
+							<li class="third_con"><span class="icon-mail"></span><a href="#contact" id="emailfont">jlgodwin@uwaterloo.ca</a>
 							</li>
 
 						</ul>
@@ -129,8 +140,8 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 			<!-- MY EXPERTISE -->
 			<section class="row-fluid my_expertise" id="my_expertise">
 				<aside class="span3 aside_el">
-					<h2>My Expertise</h2>
-					<h5>skills that I'm<br> proud of</h5>
+					<h2>Engineering Skills</h2>
+					<h5>Insert something<br> catchy</h5>
 				</aside>
 				<article class="span4 borderleft par_el">
 					<p>Fringilla justo ullamcorper ac. Class aptent taciti sociosqu ad litora torque per conubia nostra, per inceptos himenaeos magna puella molto est.</p><p>Raesent sem elit, volutpat id vulputate faucibus, fringilla vel mass. Proin nec mi a mi tincidunt elementu sed vel ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>I love doing what I do.</p>					
@@ -156,45 +167,66 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 			<section class="row-fluid experience" id="experience">
 				<aside class="span3 aside_el">
 					<h2>Experience</h2>
-					<h5>where I worked</h5>
+					<h5>Work Terms and Prior</h5>
 				</aside>
 				<div class="span9">
 					<div class="row-fluid">
 						<article class="span12 borderleft par_el in_spacing">
-							<span class="period">2012 - Present</span>
+							<span class="period">May | August 2014</span>
 							<div class="bigspacing">
 								<header>
-									<h2>Pixel Dizajn Studio</h2>
-									<h3>Designer</h3>
+									<h2><a href="http://communitech.com">Communitech</a></h2>
+									<h3>Application Developer | 1B Coop</h3>
 								</header>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.</p>
-<p>Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.</p>
+								<p><span>iOS App Developement</span><br>
+									-iOS 7 Insurance Application developed according to cliental. Developed with client and server side components. 
+									-Used: TestFlight, PhoneGap, Apache Cordova, Dojo Mobile, Javascript, HTML5, CSS
+
+								</p>
+
+								<p>Remote Control Blimp Hardware Hack <br>
+									-Remote control a hellium filled blimp through smartphone virtual joystick and live streaming video
+									-Used: Node.js, Socket.io, Raspberry Pi, Javascript, HTML5, CSS
+								</p>
+
 							</div>
 						</article>
 					</div>
 					<div class="row-fluid">
 						<article class="span12 borderleft par_el in_spacing">
-							<span class="period">2008 - 2012</span>
+							<span class="period">June 2011 | Present</span>
 							<div class="bigspacing">
 								<header>
-									<h2>College Art Studio</h2>
-									<h3>UX Designer</h3>
+									<h2>Rapid Flash Digital</h2>
+									<h3>Entrepreneur/Sole Proprietor</h3>
 								</header>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.</p>
-<p>Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.</p>
+								<p>“Digital Birthday Parties” - Photographed children’s dress-up birthday parties with costume props and green screen effects</p>
+								<p>Photography in Corporate & Portrait with digital effects & editing</p>
 							</div>
 						</article>
 					</div>
 					<div class="row-fluid">
 						<article class="span12 borderleft par_el in_spacing">
-							<span class="period">2007 - 2008</span>
+							<span class="period">Summer 2013</span>
 							<div class="bigspacing">
-								<header>
-									<h2>Freelancer</h2>
-									<h3>Web designer and developer</h3>
+								<header><h2>Arts Compuer Experience (ACE) Freelancer</h2>
+									<h3>Lead Camp Counselor</h3>
 								</header>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.</p>
-<p>Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.</p>
+								<p>Lead youth camper involvement in daily/weekly art, computer & swimming activities</p>
+								<p>Mentored new Counselors-In-Training (CIT’s)</p>
+							</div>
+						</article>
+					</div>
+					<div class="row-fluid">
+						<article class="span12 borderleft par_el in_spacing">
+							<span class="period">Nov 2011 | Mar 2012</span>
+							<div class="bigspacing">
+								<header><h2>Hudson Bay Company</h2>
+									<h3>Sales Associate</h3>
+								</header>
+								<p>Consulted customers with clothing purchases</p>
+								<p>Promotion and sales of store credit card to new customers
+								</p>
 							</div>
 						</article>
 					</div>
@@ -206,16 +238,16 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 			<section class="row-fluid education" id="education">
 				<aside class="span3 aside_el">
 					<h2>Education</h2>
-					<h5>my college and<br> high school</h5>
+					<h5>University and <br> Highschool Education</h5>
 				</aside>
 				<div class="span9">
 					<div class="row-fluid">
 						<article class="span12  borderleft par_el in_spacing">
-							<span class="period">2003 - 2007</span>
+							<span class="period">2013 | present</span>
 							<div class="bigspacing">
 								<header>
-									<h2>Stanford University</h2>
-									<h3>Computer science</h3>
+									<h2>University of Waterloo</h2>
+									<h3>Computer Engineering</h3>
 								</header>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.</p>
 <p>Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.</p>
@@ -224,11 +256,11 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 					</div>
 					<div class="row-fluid">
 						<article class="span12  borderleft par_el in_spacing">
-							<span class="period">1999 - 2003</span>
+							<span class="period">2009 | 2013</span>
 							<div class="bigspacing">
 								<header>
-									<h2>Head-Royce School</h2>
-									<h3>Oakland, CA</h3>
+									<h2>St.David Catholic Secondary School</h2>
+									<h3>Waterloo, ON, Canada</h3>
 								</header>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam leo, ornare vulputate placerat luctus, sollicitudin id massa. Morbi elementum justo id lorem tempus quis interdum purus tristique. Nulla massa arcu, egestas at tincidunt placerat, luctus vel orci.</p>
 <p>Quisque non sollicitudin orci. Pellentesque lobortis rhoncus metus, quis bibendum nisi lacinia ut.</p>
@@ -243,8 +275,8 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 			<!-- PORTFOLIO -->
 			<section class="row-fluid portfolio" id="portfolio">
 				<aside class="span3 aside_el">
-					<h2>Portfolio</h2>
-					<h5>some of my<br> best work</h5>
+					<h2>Design Projects & Engineering Work</h2>
+					<h5>Projects & Related Involement</h5>
 				</aside>
 				<div class="span9 borderleft">
 					<div class="galleryContainer">					
@@ -333,8 +365,8 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 			<!-- BLOG -->
 			<section class="row-fluid blogsection" id="blog">
 				<aside class="span3 aside_el">
-					<h2><a href="http://pixeldizajn.com/perfectcvwp/blog">My Blog</a></h2>
-					<h5>latest posts</h5>
+					<h2><a href="http://pixeldizajn.com/perfectcvwp/blog">Instructional Coding Website</a></h2>
+					<h5><a href="http://mecodegood.com">mecodegood.com</a></h5>
 				</aside>
 				<div class="span9">
 
@@ -393,20 +425,62 @@ body.custom-background { background-image: url('http://pixeldizajn.com/perfectcv
 			<div id="contact">
 				<aside class="span3 aside_el">
 					<h2>Contact me</h2>
-					<h5>I reply in less<br> than 24 hours</h5>
+					<h5><br></h5>
 				</aside>
 				<div class="span9 borderleft">
+
+			<div id="form-messages"></div>
+
+			<form id="ajax-contact" method="post" action="mailer.php">
+			<div class="field">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+
+			<div class="field">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="field">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+			</div>
+
+			<div class="field">
+				<button type="submit">Send</button>
+			</div>
+		</form>
+			
+					<!--
 					<form class="comment_form" data-validate="parsley">
 						<fieldset>
+
 							<input type="text" name="name" id="form_name" data-required="true" data-trigger="focusin focusout" placeholder="Name" class="parsley-validated">
+
 							<input type="text" name="email" id="form_email" data-required="true" data-trigger="focusin focusout" data-type="email" placeholder="Email Address" class="parsley-validated">
+
 							<textarea rows="8" name="message" id="form_message" data-required="true" data-trigger="focusin focusout" placeholder="Message" class="parsley-validated"></textarea>
+
 							<input name="recipient_mail" id="send_message_receive" type="hidden" value="milanmarcom@gmail.com">
+
 							<input type="text" id="smart_men" value="">
+
 							<input name="submit" type="submit" id="submit-message" value="SEND THE MESSAGE">
+
 						</fieldset>
 					</form>
+				-->
+
 				</div>
+				<!-- -->
+				
+
+			
+
+
+		
+				<!-- -->
 			</div>
 		</footer>
 	</div><!-- /container -->
@@ -425,6 +499,9 @@ var pcvData = {"SITE_URL":"http:\/\/pixeldizajn.com\/perfectcvwp","pcv_wpurl":"h
 /* ]]> */
 </script>
 <script type="text/javascript" src="http://pixeldizajn.com/perfectcvwp/wp-content/themes/perfectcv/js/custom.js"></script>
+<!--Mail -->
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script src="js/app.js"></script>
 <!-- Generated in 1.300 seconds. Made 40 queries to database and 30 cached queries. Memory used - 25.88MB -->
 <!-- Cached by DB Cache Reloaded Fix -->
 <!-- end WP generated footer -->
